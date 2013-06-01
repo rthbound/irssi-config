@@ -16,14 +16,14 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "slash_nick";
-    autosendcmd = "/msg nickserv identify $IRC_PASS;wait 2000;/window goto nickserv; /wc"
+    autosendcmd = "/msg nickserv identify $IRC_PASS;wait 2000;/window goto nickserv; /wc; /join ruby; /join rubyonrails; /join isotope11";
   };
   Ubuntu = { type = "IRC"; };
 };
 
 channels = (
-  { name = "#ruby";        chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#rubyonrails"; chatnet = "Freenode"; autojoin = "Yes"; }
+  { name = "#ruby";        chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#rubyonrails"; chatnet = "Freenode"; autojoin = "No"; }
 );
 
 aliases = {
